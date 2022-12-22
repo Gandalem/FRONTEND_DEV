@@ -8,100 +8,73 @@
 </head>
 <body>
     <h1 style="color:red;"> 회원가입 양식 </h1>
-    <form name = myform2 action = "login.do" method="get">
-        <table>
+    <form  name = myform2 action = "login.do" method="get" >
+        <table border="1" width="500">
             <tr>
-                <td>이름 : </td>
-                <td><input type="text" name="name" placeholder="이름을 입력해 주세요"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td align="right">이름 : </td>
+                <td colspan="2"><input type="text" name="name" placeholder="이름을 입력해 주세요"></td>
             </tr>
             <tr>
-                <td>아이디 : </td>
-                <td><input type="text" neme="id" placeholder="아이디를 입력해 주세요"> </td>
-                <td><input type="button" value="아이디중복체크"> </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td align="right">아이디 : </td>
+                <td colspan="2"><input type="text" neme="id" placeholder="아이디를 입력해 주세요"> 
+                    <input type="button" value="아이디중복체크"> </td>
             </tr>
             <tr>
-                <td>페스워드 : </td>
-                <td><input type="password" neme="pwd" placeholder="패스워드를 입력해주세요"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td align="right">페스워드 : </td>
+                <td colspan="2"><input type="password" neme="pwd" placeholder="패스워드를 입력해주세요"></td>
             </tr>
             <tr>
-                <td>페스워드 확인 : </td>
-                <td><input type="password" name="pwd" placeholder="페스워드를 다시한번 입력해주세요"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td align="right">페스워드 확인 : </td>
+                <td colspan="2"><input type="password" name="pwd" placeholder="페스워드를 다시한번 입력해주세요"></td>
             </tr>
             <tr>
-                <td>성별 : </td>
-                <td><input type="radio" name="sex" value="man">남성</td>
-                <td><input type="radio" name="sex" value="woman">여성</td>
-                <td><input type="radio" name="sex" value="animal">사람아님</td>
-                <td></td>
-                <td></td>
+                <td align="right">성별 : </td>
+                <td colspan="2"><input type="radio" name="sex" value="man">남성
+                    <input type="radio" name="sex" value="woman">여성
+                    <input type="radio" name="sex" value="animal">사람아님
+                </td>
             </tr>
             <tr>
-                <td>취미 : </td>
-                <td><input type="checkbox" name="hobby1" value="m1">음악감상 &nbsp; &nbsp;</td>
-                <td><input type="checkbox" name="hobby2" value="m2">독서 &nbsp; &nbsp;</td>
-                <td><input type="checkbox" name="hobby3" value="m3">운동 &nbsp; &nbsp;</td>
-                <td><input type="checkbox" name="hobby4" value="m4">등산 &nbsp; &nbsp;</td>
-                <td><input type="checkbox" name="hobby5" value="m5">게임 &nbsp; &nbsp;</td>
+                <td align="right">취미 : </td>
+                <td colspan="2">
+                    <input type="checkbox" name="hobby1" value="m1">음악감상&nbsp;
+                    <input type="checkbox" name="hobby2" value="m2">독서&nbsp;
+                    <input type="checkbox" name="hobby3" value="m3">운동&nbsp;
+                    <input type="checkbox" name="hobby4" value="m4">등산&nbsp;
+                    <input type="checkbox" name="hobby5" value="m5">게임&nbsp;</td>
             </tr>
             <tr>
-                <td>휴대전화 : </td>
-                <td> <select name="nation">
+                <td align="right">휴대전화 : </td>
+                <td colspan="2"> <select name="nation">
                     <option value="082" selected>대한민국(082)</option>
                     <option value="006">미국(006)</option>
                     <option value="007">영국(007)</option>
                     <option value="008">캐나다(008)</option>
-                </select> - </td>
-                <td><select name="zone">
+                </select> - <select name="zone">
                     <option value = 010 selected>010</option>
                     <option value="011">011</option>
                     <option value="012">012</option>
                     <option value="013">013</option>
                     <option value="014">014</option>
-                </select> - </td>
-                <td><input type="text" name="phone3" size="4" maxlength="4"> - </td>
-                <td><input type="text" name="phone4" size="4" maxlength="4"></td>
-                <td></td>
+                </select> - 
+                <input type="text" name="phone3" size="4" maxlength="4"> - 
+                <input type="text" name="phone4" size="4" maxlength="4"></td>
             </tr>
             <tr>
-                <td>자기소개 : </td>
-                <td><textarea name="profile" rows = 10 cols=50 placeholder="글을 입력해주세요.">
+                <td align="right">자기소개 : </td>
+                <td colspan="2"><textarea name="profile" rows = 10 cols=50 placeholder="글을 입력해주세요.">
 
                 </textarea></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
-                <td>첨부파일 : </td>
-                <td><input type="file"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td> 10MB 까지만 전송해 주세요.</td>
+                <td align="right" width="150">첨부파일 : </td>
+                <td width="100"><input type="file"></td>
+                    <td style="font-size: small;">10MB 까지만 전송해 주세요.</td>
             </tr>
             <tr>
-                <td><input type="reset" value="리셋"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><input type="submit" value="서버로 전송"></td>
+                <td align="left" ><input type="reset" value="리셋"></td>
+                <td  align="right"><input type="submit" value="서버로 전송"></td>
+               
             </tr>
 
         </table>
