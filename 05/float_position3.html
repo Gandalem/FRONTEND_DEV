@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float을 사용하면서 clear</title>
+    <style>
+        
+        div{
+            border: 1px red solid;
+            width: 200px;
+            margin: 10px;
+            float: left;
+        }
+        .div1{overflow: auto;}
+        .div2{width: 500px;
+            overflow: auto;}
+        .div3{
+            clear: both;
+        }
+        .div4{width: 500px;}
+    </style>
+</head>
+<body>
+    <h3>float을 사용하면서 clearㅇ르 적절하게 사용해야한다.</h3>
+    <div class="div1">div1<img src="../img-04/pic1.jpg"></div>
+    <div class="div2">div2 - aaaaa aaaaa aa aaaaaaa aaaaaaaaaa aaaa aaaaaaaaaaa aaaaaa
+        aaaaaaa aaaa aaaaaa 
+        aaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaa
+    </div>
+    <div class="div3">div3<img src="../img-04/pic2.jpg"></div>
+    <div class="div4">div4 - aaaa aaaaaaaaaa aaaaaaaaaaaaa aaaa aaaaaaaa aaaaa aaaa
+        a aaaaaaaa aaaaaaa aaaa
+        aa aaaaaaaaa aaaa aaaaaaaaa aaaaaaaa aaaaaaa
+    </div>
+    
+</body>
+</html>

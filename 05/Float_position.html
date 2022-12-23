@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{width:50px; height:50px; border:1px solid red;
+        margin: 10px;
+        float: left;}
+        .c{
+            clear: both; /*float 속성을 제거한다.*/
+        }
+        .le{
+            margin-top: 10px;
+            width: 250px; height: 200px;
+            position: fixed;
+            left: 75%;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        인라인 태그나 블락 태그에서 화면을 배치하는 방법을 설정
+        inherit:부모의 요소의 float 속성을 상속 받는다.
+        left :요소를 왼쪽으로 정렬
+        right : 요소를 오른쪽으로 정렬
+        none : float 속성을 적용하지 않는다.
+
+    중요 : float은 그속성이 계속 유지가 되므로 clear를
+        사용해서 하위에서 처리하지 않도록 할때 
+    -->
+    <p class="le">박스</p>
+    <div> 박스1</div>
+    <div> 박스2</div>
+    <div> 박스3</div>
+    <div> 박스4</div>
+
+    <div class="c"> 박스5</div>
+    <div> 박스6</div>
+    <div> 박스7</div>
+    <div > 박스8</div>
+    <div class="c"> 박스9</div>
+    <div> 박스10</div>
+    <div> 박스1</div>
+    <div > 박스2</div>
+    <div class="c"> 박스3</div>
+    <div> 박스4</div>
+    <div> 박스5</div>
+    <div > 박스6</div>
+    <div class="c"> 박스7</div>
+    <div> 박스8</div>
+    <div> 박스9</div>
+    <div> 박스10</div>
+    <div class="c"> 박스1</div>
+    <div> 박스2</div>
+    <div> 박스3</div>
+    <div> 박스4</div>
+    <div class="c"> 박스5</div>
+    <div> 박스6</div>
+    <div> 박스7</div>
+    <div> 박스8</div>
+    <div> 박스9</div>
+    <div> 박스10</div>
+    <div> 박스1</div>
+    <div> 박스2</div>
+    <div> 박스3</div>
+    <div> 박스4</div>
+    <div> 박스5</div>
+    <div> 박스6</div>
+    <div> 박스7</div>
+    <div> 박스8</div>
+    <div> 박스9</div>
+    <div> 박스10</div>
+    <div> 박스1</div>
+    <div> 박스2</div>
+    <div> 박스3</div>
+    <div> 박스4</div>
+    <div> 박스5</div>
+    <div> 박스6</div>
+    <div> 박스7</div>
+    <div> 박스8</div>
+    <div> 박스9</div>
+    <div> 박스10</div>
+    
+</body>
+</html>
