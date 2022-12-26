@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko_kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition_timing_function</title>
+    <style>
+        div{
+            width:100px;height:50px;
+            background-color: red;
+            color: yellow;
+            border:1px solid black;
+            transition: 3s;
+        }
+        #div1{
+            transition-timing-function: linear;
+        }
+        #div2{
+            transition-timing-function: ease;
+        }
+        #div3{
+            transition-timing-function: ease-in;
+        }
+        #div4{
+            transition-timing-function: ease-out;
+        }
+        #div5{
+            transition-timing-function: ease-in-out;
+        }
+        #div6{
+            transition-timing-function: cubic-bezier(0.1,0.7,0.1,1.5);
+        }
+        div:hover{
+            width:400px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        transition_timing_function:linear   : 처음부터 끝까지 같은 속도
+        transition_timing_function          : 느리게 시작해서 점점빨라지다가 느리게 끝남
+        transition_timing_function:ease-in  : 느리게 시작해서 점점빨라지다가 빠르게 끝남
+        transition_timing_function:ease-out : 등속 속도로 시작해서 점점 느려지면서 끝남
+        transition_timing_function:ease-in-out : 느리게 시작해서 느리게 끝남
+        transition_timing_function:cublic-bezier (n, n, n, n) : 처음과 끝의 속도를 자신이 정의 
+     -->
+    
+     <div id="div1">linear</div>
+     <div id="div2">ease</div>
+     <div id="div3">ease-in</div>
+     <div id="div4">ease-out</div>
+     <div id="div5">ease-in-out</div>
+     <div id="div6">cubic-bezier</div>
+
+</body>
+</html>

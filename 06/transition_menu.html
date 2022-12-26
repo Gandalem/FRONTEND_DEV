@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition_menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding-top: 10px;
+        }
+        a{text-decoration: none;
+            color:white;
+            
+        }
+        div{
+            border:1px solid red;
+            width:80px; height:50px;
+            background:#ff8080 ;
+            transition-duration: 1s;
+            text-align: center;
+            padding-top: 10px;
+            
+        }
+        div:hover{
+            width:200px;
+            transition-timing-function: linear;
+            background: #ff0000;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div><a href=# target="_self">HOME</a></div>
+    <div><a href=# target="_self">ABOUT</a></div>
+    <div><a href=# target="_self">NEWS</a></div>
+    <div><a href=# target="_self">STUDY</a></div>
+    <div><a href=# target="_self">CONNECT</a></div>
+    
+</body>
+</html>
