@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+    <style>
+        /* Header CSS 시작 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f2f0f0;
+            font-family: "맑은고딕";
+            font-size: 12px;
+            color: #444444;
+        }
+
+        ul {
+            border: 0px red solid;
+            list-style: none;
+        }
+
+        a:link {
+            text-decoration-line: none;
+        }
+
+        /* 기본세팅 끝 */
+        div {
+            border: 0px solid red;
+        }
+
+        #logo {
+            float: left;
+            padding: 30px 0 0 30px;
+            /*padding 값을 넣어서 이미지의 위치 조정, top,right, bottom, left*/
+        }
+
+        #top_menu {
+            float: right;
+            margin: 20px 20px 0 0;
+
+        }
+
+        #top_menu li {
+            display: inline;
+            padding: 0 5px 0 5px;
+
+        }
+
+
+        #main_menu {
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #4e4c4d;
+            margin-top: 15px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        #main_menu li {
+            display: inline;
+            /* li 는 inline (수평으로 출력) */
+            padding: 0 20px 0 20px;
+
+        }
+
+        #clear {
+            clear: both;
+        }
+
+        /* Header CSS 끝 */
+
+
+        /* Main CSS 시작 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background-color: #f2f0f0;
+            color: #444444;
+            font-size: 12px;
+            font-family: "돋움";
+        }
+
+        /* 기본설정끝 */
+        div {
+            border: 0px solid red;
+        }
+
+        #first {
+            margin-left: 100px;
+        }
+
+        h3 {
+            border-bottom: 2px #80a727 solid;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+
+        h3 span {
+            color: #80a727;
+            font-weight: bold;
+        }
+
+        .item {
+            float: left;
+            margin-top: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border: 0px red solid;
+
+        }
+
+        .subject {
+            color: #80a727;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .comment {
+            margin-top: 5px;
+            color: #888888;
+        }
+
+        .price {
+            margin-top: 5px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .item img {
+            box-shadow: 5px 5px 10px 0;
+        }
+
+        .item li {
+            text-align: center;
+        }
+
+        .clear {
+            clear: both;
+            /*float 을 초기화*/
+        }
+
+        /* Main CSS 끝 */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header File -->
+    <div id="logo">
+        <a href="header.html">
+            <img src="img07/10/logo.gif">
+        </a>
+    </div>
+    <ul id="top_menu">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">마이페이지</a></li>
+        <li><a href="#">주문/배송 조회</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">고객센터</a></li>
+    </ul>
+    <!-- float : clear 사용 -->
+    <div id="clear"></div>
+    <ul id="main_menu">
+        <li>다연아트 소개</li>
+        <li>상품소개 QNA</li>
+        <li>시안 확인</li>
+        <li>고객 갤러리</li>
+        <li>공지사항</li>
+    </ul>
+
+    <!-- Main File -->
+    <div id="new"><!-- 제일 바깥쪽의 div-->
+        <h3> <span>NEW ARRLVAL</span> 신규상품</h3>
+
+        <ul class="item" id="first">
+            <li> <img src="img07/10/new_01.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_02.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_03.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <ul class="item" id="first">
+            <li> <img src="img07/10/new_04.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_05.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_06.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <ul class="item" id="first">
+            <li> <img src="img07/10/new_01.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_02.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_03.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <ul class="item" id="first">
+            <li> <img src="img07/10/new_04.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_05.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+        <ul class="item">
+            <li> <img src="img07/10/new_06.jpg"></li>
+            <li class="subject">맞춤형 제작(풍경)</li>
+            <li class="comment">원하는 사이즈로 메뉴 제작</li>
+            <li class="price">20,000</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko_kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        #clear {
+            clear: both;
+        }
+
+        /* 메인1 스타일 */
+        .main1 {
+            margin-top: 10px;
+        }
+
+        .banner {
+            height: 118px;
+            background-color: #00A8AB;
+        }
+
+        .banner ul {
+            margin-top: 5px;
+        }
+
+        .banner li {
+            display: inline;
+            margin-left: 28px;
+        }
+
+        /* 메인 1스타일끝 */
+        /* 메인 2스타일 시작 */
+        .more{
+            vertical-align: top;
+            float: right;
+        }
+        .main2{
+            margin-top: 20px;
+            height: 140px;
+        }
+        .customer{
+            margin-left: 10px;
+            float: left;
+        }
+        .notice{
+            float: left;
+            margin-left: 40px;
+            width:300px;
+        }
+        .notice ul{
+            margin-top: 12px;
+            color: #666666;
+            line-height: 20px;
+        }
+        .notice .subject{
+            float: left;
+            margin-left: 10px;
+        }
+        .notice .date{
+            float: right;
+            margin-right: 5px;
+        }
+        .faq .banner_faq{
+            float: right;
+            margin-right: 20px;
+        }
+        /* 메인2 끝 */
+        /* 메인3 시작 */
+        .main3{
+            height: 165px;
+            border-top:1px #cccccc solid ;
+            border-bottom:5px #00A8AB solid ;
+        }
+        .blue_list ul{
+            margin-left: 45px;
+            margin-top: 20px;
+            line-height: 23px;
+            float: left;
+        }
+        .blue_list h3{
+            color: #00A8AB;
+            margin-left: 13px;
+            margin-bottom: 5px;
+        }
+        .blue_list img{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main1">
+        <section class="banner"> <!-- 특정 구획을 하나의 섹션으로 나타냄-->
+            <ul>
+                <li>
+                    <img src="./img/banner01.gif">
+                </li>
+                <li>
+                    <img src="./img/banner_bar.gif">
+                </li>
+                <li>
+                    <img src="./img/banner02.gif">
+                </li>
+                <li>
+                    <img src="./img/banner_bar.gif">
+                </li>
+                <li>
+                    <img src="./img/banner03.gif">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <main class="main2">
+        <article class="customer">
+            <img src="./img/customer.gif">
+            <img class="more" src="./img/more.gif">
+        </article>
+        <article class="notice">
+            <img src="./img/notice.gif">
+            <img class="more" src="./img/more.gif">
+            <ul>
+                <li>
+                    <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+                    <div class="date">2014-03-03</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+                    <div class="date">2014-03-03</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+                    <div class="date">2014-03-03</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="subject">새로운 상품의 출시를 알려드립니다.</div>
+                    <div class="date">2014-03-03</div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </article>
+        <article class="faq">
+            <img class="banner_faq" src="./img/banner_faq.gif">
+        </article>
+    </main>
+    <main class="main3">
+        <article class="blue_list">
+            <ul>
+                <h3>손해보험 상식</h3>
+                <li><img src="./img/blue_dot.gif">손해 보험이란?</li>
+                <li><img src="./img/blue_dot.gif">나에게 필요한 보험은?</li>
+                <li><img src="./img/blue_dot.gif">보험약관의 중요성?</li>
+                <li><img src="./img/blue_dot.gif">손해보험의 특징?</li>
+            </ul>
+            <ul>
+                <h3>루바토 보험의 장점</h3>
+                <li><img src="./img/blue_dot.gif">보험료 저렴</li>
+                <li><img src="./img/blue_dot.gif">신속한 처리및 보상</li>
+                <li><img src="./img/blue_dot.gif">만기 시 원리금 보장</li>
+            </ul>
+            <ul>
+                <h3>고객센터</h3>
+                <li><img src="./img/blue_dot.gif">전국 지점 안내</li>
+                <li><img src="./img/blue_dot.gif">손해배상 안내</li>
+                <li><img src="./img/blue_dot.gif">손해보험 FAQ</li>
+                <li><img src="./img/blue_dot.gif">질문과 답변</li>
+            </ul>
+            <ul>
+                <h3>마이페이지</h3>
+                <li><img src="./img/blue_dot.gif">계약 조회/변경</li>
+                <li><img src="./img/blue_dot.gif">보험 계약 갱신</li>
+                <li><img src="./img/blue_dot.gif">보험료 납입</li>
+                <li><img src="./img/blue_dot.gif">증명서 발급</li>
+            </ul>
+            <ul>
+                <h3>가입 안내</h3>
+                <li><img src="./img/blue_dot.gif">공인인증센터</li>
+                <li><img src="./img/blue_dot.gif">인증서 발급/갱신</li>
+                <li><img src="./img/blue_dot.gif">인증서 폐기</li>
+                <li><img src="./img/blue_dot.gif">웹 로그인</li>
+            </ul>
+            <ul>
+                <h3>회사 소개</h3>
+                <li><img src="./img/blue_dot.gif">기업소개</li>
+                <li><img src="./img/blue_dot.gif">찾아오시는 길</li>
+            </ul>
+        </article>
+    </main>
+</body>
+
+</html>
