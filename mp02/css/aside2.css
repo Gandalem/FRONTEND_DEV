@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+        body{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        a:link{
+            text-decoration-line: none;
+        }
+        #asid{
+            border-radius: 15px;
+            border: 1px #bbbbbb solid;
+            margin-top: 30px;
+            width: 170px;
+            height: 90px;
+            padding: 9px;
+            background-color: #eeeeee;
+        }
+        #asid input{
+            width: 98px;
+            float: left;
+        }
+        #asid .logp{
+            margin-bottom: 10px;
+        }
+        #asid .logbtm{
+            margin-left: 4px;
+            margin-top: -4px;
+        }
+        #asid .id_pass{
+            margin-bottom: 3px;
+        }
+        div .joinp{
+            float: left;
+        }
+        #asid2 .meetp{
+            margin-top: 15px;
+        }
+        #asid2 .list{
+            margin-left: 30px;
+            margin-top: -240px;
+            width: 150px;
+            line-height: 30px;
+            font-size: 15px;
+            height: 234px;
+        }
+        #asid3{
+            border: 1px #cccccc solid;
+            border-radius: 15px;
+            padding: 4px;
+            margin-top: 10px;
+            width: 180px;
+        }

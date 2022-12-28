@@ -1,0 +1,63 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a:link{
+    text-decoration-line: none;
+}
+#main2{
+    width: 756px;
+    margin-top: -615px;
+    margin-left: 210px;
+    height: 630px;
+}
+table{
+    border-top: 1px solid #616161;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    
+}
+.h1{
+    background-color: #cccccc;
+}
+
+td{
+    padding: 10px;
+}
+
+.h2{
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+}
+td.num{
+    text-align: right;
+}
+div.wirte{
+    float: right;
+    margin-top: 17px;
+}
+.time2{
+    height: 120px;
+    margin-top: 139px;
+    background-color: #eeeeee;
+}
+.time2 img{
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.time2 input{
+    width: 520px;
+    height: 75px;
+    margin-top: 20px;
+}
+.time2 .a2{
+    float: right;
+    margin-top: -80px;
+}

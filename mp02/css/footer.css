@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;}
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a:link{
+    text-decoration-line: none;
+}
+#footer{
+    border-top: 1px #bbbbbb solid;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+#footer .logo{
+    margin-left: 190px;
+    margin-top: 5px;
+}
+#footer .text{
+    font-size: 12px;
+    margin-left: 410px;
+    margin-top: 15px;
+    color: rgb(32, 32, 32);
+    width: 300px;
+}
+#footer .sns{
+    height: 40px;
+    float: right;
+    margin-top: -45px;
+    margin-right: 10px;
+}
+.sns li{
+    display: inline;
+}

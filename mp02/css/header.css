@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0;}
+        body{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        a:link{
+            text-decoration-line: none;
+        }
+        .login{
+            float: right;
+            margin-right: 40px;
+            font-size: 12px ;
+            color: #666666;
+        }
+        .login li{
+            display: inline;
+        }
+        .logo{
+            float: left;
+            margin-left: 20px;
+        }
+        .wrap{
+            margin-left: 155px;
+        }
+        .main_menu{
+            text-align: center;
+            margin-left: 98px;
+            margin-top: -35px;
+        }
+        .main_menu li{
+            display: inline;
+            font-size: 17px;
+            margin-right: 58px;
+            color: white;
+        }
+        .wrap img{
+            margin-top: 10px;
+            margin-left: 40px;
+        }

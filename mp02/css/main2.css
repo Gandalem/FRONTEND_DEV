@@ -1,0 +1,69 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a:link{
+    text-decoration-line: none;
+}
+#main2{
+    width: 756px;
+    margin-top: -615px;
+    margin-left: 210px;
+    height: 630px;
+}
+#main2 .free{
+    margin-top: 10px;
+}
+#main2 .free_select{
+    border-top: 2px #bbbbbb solid;
+    margin-top: 10px;
+    font-size: 13px;
+}
+#main2 .list-text{
+    float: left;
+    margin-top: 10px;
+}
+#main2 .list-select{
+    float: right;
+    
+}
+.list-select input{
+    width: 100px;
+    margin-top:5px;
+    margin-right: 5px;
+}
+.list-select .sreach{
+    margin-top: 5px;
+    float: right;
+}
+table{
+    border-top: 1px solid #616161;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.h1{
+    background-color: #cccccc;
+}
+td{
+    border-bottom: 1px solid #cccccc;
+}
+td.num{
+    text-align: center;
+}
+div.next{
+    float: left;
+    margin-left: 275px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+div.wirte{
+    float: right;
+    margin-top: 17px;
+}
