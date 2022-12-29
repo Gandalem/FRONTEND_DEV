@@ -1,0 +1,25 @@
+table#item{
+    background-color: #eeeeee;
+    border-collapse: collapse;
+    width: 250px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+#item th{
+    color: white;
+    background-color: #ABCB5F;
+    line-height: 40px;
+}
+#item td{
+    line-height: 30px;
+    border-bottom: 1px #bbbbbb solid;
+    color: #333333;
+    padding-left:20px ;
+}
+#item_tel{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+#item_div{
+    float: left;
+}
