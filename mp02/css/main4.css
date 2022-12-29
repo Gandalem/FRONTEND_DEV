@@ -1,0 +1,52 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a:link{
+    text-decoration-line: none;
+}
+#main2{
+    width: 756px;
+    margin-top: -615px;
+    margin-left: 210px;
+    height: 630px;
+}
+
+table{
+    border-top: 1px solid #bbbbbb;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    
+}
+th{
+    background-color: #dddddd;
+    font-size: 18px;
+    line-height: 32px;
+}
+tr{
+    border-bottom: 1px solid #bbbbbb;
+}
+.center{
+    text-align: center;
+    border-right: 1px solid #bbbbbb;
+}
+.wirte{
+    float: right;
+    margin-top: 17px;
+}
+.tablewirte input{
+    margin: 9px;
+}
+.tablewirte .titletable{
+    width: 96%;
+}
+.tablewirte .texttable{
+    width: 96%;
+    height: 290px;
+}
+
