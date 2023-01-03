@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        자바 : 메소드(함수) 오버로딩이 가능했음. : 
+            메소드(함수) 오버로딩 : 메소드 이름이 동일하고 , 인풋 메개변수의 갯수나 타입이 
+            다를경우 해당 메소드를 호출
+        자바 스크립트: 메소드 오버로딜이 불가능 하다.
+
+     -->
+    <script>
+        // 메게 변수가 없는 함수
+        function add(){
+            var sum=1;
+            return sum;
+        }
+
+        // 메게 변수가 1개인 함수
+        function add(x){
+            var sum=x + 1;
+            return sum;
+        }
+        // 메게변수가 2개인 함수
+        function add(x,y){
+            var sum=x+y;
+            return sum;
+        }
+        
+        // 메게변수가 3개인 함수
+        function add(x,y,z){
+            var sum=x+y+z;
+            return sum;
+        }
+        document.write("메게변수 없는 함수"+add()+"<br>");
+        document.write("메게변수 1개인 함수"+add(10)+"<br>");
+        document.write("메게변수 2개인 함수"+add(10,20)+"<br>");
+        document.write("메게변수 3개인 함수"+add(10,20,30)+"<br>");
+    </script>
+</body>
+</html>
