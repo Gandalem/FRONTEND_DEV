@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #main{
+            margin: 10px;
+        }
+        #title,#text{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #text{
+            font-size: 25px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div id="title"><h1><span id="span">+</span>'HTML'이란 무엇인가요?</h1></div>
+            <div id="text">하이퍼텍스트 마크업 언너(Hyper Text Markup Language)입니다.</div>
+        </div>
+        <hr>
+        <div>
+            <div id="title"><h1><span>+</span>'CSS'란 무엇인가요?</h1></div>
+            <div id="text">캐스케이딩 스타일 시트(Cascading Style Sheets)입니다.</div>
+        </div>
+        <hr>
+        <div>
+            <div id="title"><h1><span>+</span>'JavaScript'란 무엇인가요?</h1></div>
+            <div id="text">자바스크립트는 객체(Object)를 기초로 하는 스크립트 프로그래밍 언어 입니다.</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var onoff = document.getElementById("span");
+    var texts = document.getElementById("text");
+
+    onoff.addEventListener("click",onoffevent);
+
+    function onoffevent(){
+        if(onoff.textContent=="+"){
+            onoff.textContent ="-";
+            texts.style.display="none";
+        }else{
+            onoff.textContent ="+";
+        }
+    }
+
+</script>
+</html>
