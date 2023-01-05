@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ol {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    목차 <span id="toc-toggle" onclick="openclosetoc()">보이기</span>
+    <ol id="ol">
+        <li>HTML</li>
+        <li> CSS </li>
+        <li> javaScript </li>
+    </ol>
+
+    <script>
+        var openclose = document.getElementById("ol");
+        var chname = document.getElementById("toc-toggle");
+
+        
+        openclose.addEventListener("click",openclosetoc);
+    
+        function openclosetoc() {
+            // 보이기 클릭하면 ol태그의 내용을 보이도록 함
+            // 보이기를 클릭하면 ol태그의 내용을 보이도록 함, <보이기> ==> <접히기>
+            if(chname.textContent =="보이기"){
+                chname.textContent = "접히기";
+                openclose.style.display = "block";
+            }else{
+                chname.textContent = "보이기";
+                openclose.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

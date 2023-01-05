@@ -26,16 +26,7 @@
         float: left;
     }
     #high_imgs img{
-        position: relative;
         margin: 50px 50px 50px 10px;  
-    }
-    #line{
-        position: absolute;
-        border: 3px #f5f5f5 dashed;
-        width: 300px;
-        height: 300px;
-        top:140px;
-        left: 195px;
     }
     #row_imgs img{
         width: 100px; height: 100px;
@@ -59,9 +50,6 @@
         <div id="imgs">
             <div id="high_imgs">
                 <img src="./images/coffee-blue.jpg" id="lightboxImage">
-                <div id="line"></div>
-            </div>
-            
             <div id="row_imgs">
                 <img style="margin-left: 10px;" src="./images/coffee-pink.jpg"  data-src="./images/coffee-pink.jpg" class="pic">
                 <img src="./images/coffee-blue.jpg" data-src="./images/coffee-blue.jpg" class="pic">
@@ -83,11 +71,21 @@
         <div id="clear"></div>
     </div>
     <script>
+        /*
+            queryselector() : css - id : #, class: .
+            getElementById : 태그 내부에 적용된 id
+            getElementByClassName() : 태그 내부에 적용된 class
+
+            엘리멘트(태그) 의 속성값을 변경할때 : 객체.setAtrribute를 사용함. id 속성에만 적용되어있다.
+                class 속성에는 setAtribure 가없다.
+        */
+
+        // DOM 객체를 생성
         var pics = document.getElementsByClassName("pic");
         var high_imgs = document.getElementById("high_imgs");
         var lightboxImage = document.getElementById("lightboxImage");
         
-        for(var i=0;i<pics.length;i++){
+        for(let i=0;i<pics.length;i++){
             pics[i].addEventListener("click",showbox);
         }
 
