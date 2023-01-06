@@ -10,14 +10,30 @@
         #main{
             margin: 10px;
         }
-        #title,#text{
+        #title,#text,#text1,#text2{
             margin-top: 50px;
             margin-bottom: 50px;
+        }
+        #title:hover{
+            color: rgb(127, 204, 255);
         }
         #text{
             font-size: 25px;
             display: block;
         }
+        #text1{
+            font-size: 25px;
+            display: block;
+        }
+        #text2{
+            font-size: 25px;
+            display: block;
+        }
+        /* id 의 값에 뒷부분 -toggle인 모든것을 선택
+        [id$-"-toggle"]{
+            margin-right: 15px;
+        }
+        */
     </style>
 </head>
 <body>
@@ -28,13 +44,13 @@
         </div>
         <hr>
         <div>
-            <div id="title"><h1><span>+</span>'CSS'란 무엇인가요?</h1></div>
-            <div id="text">캐스케이딩 스타일 시트(Cascading Style Sheets)입니다.</div>
+            <div id="title"><h1><span id="span1">+</span>'CSS'란 무엇인가요?</h1></div>
+            <div id="text1">캐스케이딩 스타일 시트(Cascading Style Sheets)입니다.</div>
         </div>
         <hr>
         <div>
-            <div id="title"><h1><span>+</span>'JavaScript'란 무엇인가요?</h1></div>
-            <div id="text">자바스크립트는 객체(Object)를 기초로 하는 스크립트 프로그래밍 언어 입니다.</div>
+            <div id="title"><h1><span id="span2">+</span>'JavaScript'란 무엇인가요?</h1></div>
+            <div id="text2">자바스크립트는 객체(Object)를 기초로 하는 스크립트 프로그래밍 언어 입니다.</div>
         </div>
     </div>
 
@@ -42,8 +58,17 @@
 <script>
     var onoff = document.getElementById("span");
     var texts = document.getElementById("text");
+    var onoff1 = document.getElementById("span1");
+    var texts1 = document.getElementById("text1");
+    var onoff2 = document.getElementById("span2");
+    var texts2 = document.getElementById("text2");
 
+   
     onoff.addEventListener("click",onoffevent);
+    onoff1.addEventListener("click",onoffevent1);
+    onoff2.addEventListener("click",onoffevent2);
+
+    
 
     function onoffevent(){
         if(onoff.textContent=="+"){
@@ -51,6 +76,25 @@
             texts.style.display="none";
         }else{
             onoff.textContent ="+";
+            texts.style.display="block";
+        }
+    }
+    function onoffevent1(){
+        if(onoff1.textContent=="+"){
+            onoff1.textContent ="-";
+            texts1.style.display="none";
+        }else{
+            onoff1.textContent ="+";
+            texts1.style.display="block";
+        }
+    }
+    function onoffevent2(){
+        if(onoff2.textContent=="+"){
+            onoff2.textContent ="-";
+            texts2.style.display="none";
+        }else{
+            onoff2.textContent ="+";
+            texts2.style.display="block";
         }
     }
 
